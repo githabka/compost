@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+
+	<title>Водоросли</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+
+
+	<!-- //js -->
+	<!-- fonts -->
+
+	<!-- //fonts -->
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html">
+				Вода
+			</a>
+		</div>
+		<div class="social-icons">
+			<ul>
+				<li><a class="facebook" href="#"></a></li>
+				<li><a class="twitt" href="#"></a></li>
+				<li><a class="link" href="#"></a></li>
+				<li><a class="googl" href="#"></a></li>
+				<li><a class="dribb" href="#"></a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //header -->
+<!-- navigation -->
+<div class="navigation">
+	<div class="container">
+		<nav class="navbar navbar-default">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="hvr-bounce-to-bottom"><a href="index.html">Главная</a></li>
+					<li class="hvr-bounce-to-bottom"> <a href="blog.html">Статьи</a></li>
+					<li class="hvr-bounce-to-bottom active"><a href="contact.html">Контакты</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="policy.html">Политика конфиденциальности</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="terms.html">Условия и положения</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+</div>
+<!-- //navigation -->
+
+<!-- banner -->
+<div class="banner page-head" style="background-image: url(mage(article);">
+	<div class="container">
+		<h3 style="text-shadow: 1px 3px 8px white;">Контакты</h3>
+	</div>
+</div>
+<!-- //navigation -->
+
+<!-- banner -->
+
+<!-- contact -->
+<div class="contact">
+	<div class="container">
+
+
+			<div class="contact-form">
+				<form action="thanks.html">
+						<input type="text" value="Новые телефона"  required="">
+						<input type="text" value="Email" required="">
+						<input type="text" value="Номер телефона"  required="">
+						<textarea type="text"  required=""></textarea>
+					<input type="checkbox" name="terms" value="check" required="" style="width: 20px;  height: 20px;
+    display: block!important;"/>
+					<a href="policy.html" target="_blank">
+						Я прочитал и согласен с условиями пользовательского соглашения
+					</a>
+						<button class="btn1">Отправить</button>
+				</form>
+			</div>
+	
+	</div>
+</div>
+<!-- //contact -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="logo2">
+				<a href="index.html">Вода</a>
+			</div>
+			<div class="ftr-menu">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+
+					<li><a href="blog.html">Статьи</a></li>
+
+					<li><a href="contact.html">Контакты</a></li>
+
+					<li><a href="policy.html">Политика конфиденциальности</a></li>
+
+					<li><a href="terms.html">Условия и положения</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	</div>
+</div>
+<div class="copy-right">
+	<div class="container">
+		<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+			All rights reserved</p>
+	</div>
+</div>
+
+<div class='cookie-banner'>
+	<p>
+		Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+	</p>
+	<button class='close-cookie'>&times;</button>
+</div>
+<!-- //footer -->
+<!-- smooth scrolling -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+
+<script>
+	window.onload = function () {
+		$('.close-cookie').click(function () {
+			$('.cookie-banner').fadeOut();
+		})
+	}
+</script>
+<script>
+	let elems = document.querySelectorAll('.server-name');
+	elems.forEach((elem) => {
+		elem.innerHTML = window.location.hostname
+	})
+</script>
+
+</body>
+</html>
